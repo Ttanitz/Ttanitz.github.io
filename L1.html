@@ -181,10 +181,7 @@ function component (width, height, color, x, y, type) {
             ctx.fillRect(this.x, this.y, this.width, this.height);
         }
         if (type == "image" || type == "background") {
-            ctx.drawImage(this.image,
-            this.x,
-            this.y,
-            this.width, this.height);
+            ctx.drawImage(this.image,this.x,this.y,this.width, this.height);
         if (type == "background"){
             ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
         }
